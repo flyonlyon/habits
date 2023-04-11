@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Healthy Habits",
+  "version": "1.0",
+  "description": "Keep track of your to-do lists and habits.",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+        "16": "images/Sad-Face-Emoji.png"
+    }
+  },
+  "icons": {
+    "16": "images/happyface.png"
+  },
+  "permissions": [
+    "storage",
+    "browserAction"
+  ]
+ }
