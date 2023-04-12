@@ -1,139 +1,126 @@
-html {
-    background: #fff;
-}
-
 body {
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    text-align: center;
-    color: #545454;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 2em 2em 4em;
-}
+    margin: 0;
+    padding: 0;
+    
+    font-family: verdana;
+    
+    background-color: #FAF5FF;
+} /* body */
 
-h1, h2, h3, h4, h5, h6 {
-    color: #222;
-    font-weight: 600;
-    line-height: 1.3;
-}
 
-h1 {
-    font-size: 45px;
-}
 
-h2 {
-    margin-top: 1.3em;
-}
-
-a {
-    color: #0083e8;
-}
-
-b, strong {
-    font-weight: 600;
-}
-
-samp {
-    display: none;
-}
-
-.menu {
-  position: relative;
-  background-color: #333;
-  overflow: hidden;
-}
-
-.menu a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.menu a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-form {
-    text-align: left;
-}
-
-input, textarea {
-    width: 100%;
-}
-
-.menu a.active {
-  background-color: grey;
-  color: white;
-}
-
-.menu-center a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.menu-right {
-  float: right;
-}
-
-.italic {
-    font-style: italic;
-    color: gray;
-}
-
-@media screen and (max-width: 600px) {
-  .menu a, .menu-right {
-    float: none;
-    display: block;
-  }
-
-  .menu-center a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
-
-.extension-popup-box{
-    z-index: 100;
-    padding: 15px 20px 15px 20px;
-    text-align: left;
-    background: #606060;
-    margin-right: 40px;
-    width: 500px;
-    border: 1px black;
-    border-style: solid;
-    position:fixed;
-    color: white;
-    right: 0%;
-    top: 0%;
-}
-
-.extension-popup-box a {
-    color: white;
-    text-decoration: none;
-}
-
-input[type="checkbox"] {
-    vertical-align: middle;
-    word-wrap: break-word;
-    height: 15px;
-    flex: 0;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.task {
+/* Navbar */
+.navbar {
+    padding: 10px;
+    height: 60px;
+    
+    background-color: #FFFFFF;
+    
     display: flex;
-    align-content: middle;
-}
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px #00000022;
+} /* .navbar */
+
+.logo {
+    margin-left: 25px;
+    
+    display: flex;
+    align-items: center;
+} /* .logo */
+
+.logo p {
+    margin-left: 15px;
+    font-size: 20px;
+} /* .logo p */
+
+.logo img {
+    height: 40px;
+} /* .logo img */
+
+.links {
+    margin-right: 30px;
+} /* .links */
+
+.links a {
+    padding: 10px;
+    margin-right: 25px;
+    
+    color: #000000;
+    text-decoration: none;
+} /* .links a */
+
+.links a:hover {
+    color: #9FA0FF;
+} /* .links a:hover */
+
+
+
+/* Home */
+.home {
+    width: 100vw;
+    height: 600px;;
+    
+    display: flex;
+} /* .container */
+
+.left {
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} /* left */
+
+.download {
+    display: flex;
+    flex-direction: column;
+} /* .download */
+
+.download h2 {
+    margin: 0px;
+    font-size: 28px;
+} /* .download h2 */
+
+.download p {
+    margin: 0px 0px 20px 0px;
+    font-size: 18px;
+} /* .download p */
+
+.download button {
+    height: 90px;
+    width: 100%;
+    
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #9FA0FF, #BBADFF);
+    box-shadow: 0px 0px 10px #00000022;
+    
+    border: none;
+    border-radius: 10px;
+} /* .download button */
+
+.download button:hover {
+    background-image: linear-gradient(to right, #9D9EFD, #B9ABFD);
+    box-shadow: none;
+} /* .download button */
+
+.right {
+    width: 50%;
+} /* .right */
+
+
+
+/* Testimonials */
+.plaque {
+    height: 1200px;
+    background-color: #FFFFFF;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px #00000022;
+} /* .navbar */
