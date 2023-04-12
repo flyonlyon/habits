@@ -3,7 +3,7 @@ body {
     padding-top: 60px;
     height: 2500px;
     
-    font-family: Sora;
+    font-family: 'Sora', Arial, sans-serif;
     
     background-color: #FAF5FF;
 } /* body */
@@ -54,7 +54,7 @@ body {
     width: 35px;
     height: 35px;
     position: absolute;
-    font-family: Sora;
+    font-family: 'Sora', Arial, sans-serif;
     
     top: 8px;
     right: 10px;
@@ -132,7 +132,7 @@ body {
 
 
 /* Home */
-.home {
+#home {
     width: 100vw;
     height: 600px;;
     
@@ -154,7 +154,7 @@ body {
     margin-bottom: 5px;
     color: #DAB6FC;
     opacity: 90%;
-    font-size: 65px;
+    font-size: 57px;
 } /* .download h2 */
 
 .download-text {
@@ -170,7 +170,7 @@ body {
     color: #FFFFFF;
     font-size: 28px;
     font-weight: 900;
-    font-family: Sora;
+    font-family: 'Sora', Arial, sans-serif;
     background-image: linear-gradient(to right, #9FA0FF, #BBADFF);
     box-shadow: 0px 0px 10px #00000033;
     
@@ -334,7 +334,7 @@ body {
     padding: 0px 15px;
     
     color: #FFFFFF;
-    font-family: Sora;
+    font-family: 'Sora', Arial, sans-serif;
     font-size: 16px;
     background-image: linear-gradient(to right, #9FA0FF, #BBADFF);
     box-shadow: 0px 0px 10px #00000033;
@@ -377,7 +377,7 @@ body {
     
     border: none;
     font-size: 20px;
-    font-family: Sora;
+    font-family: 'Sora', Arial, sans-serif;
 } /* .input-info input */
 
 .input-message {
@@ -409,7 +409,7 @@ body {
 
 .submit {
     margin-top: 20px;
-    font-family: Sora;
+    font-family: 'Sora', Arial, sans-serif;
     display: flex;
     flex-direction: row;
 } /* .submit */
@@ -419,7 +419,7 @@ body {
     height: 50px;
     margin-right: 20px;
     
-    font-family: Sora;
+    font-family: 'Sora', Arial, sans-serif;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 600;
@@ -467,7 +467,7 @@ body {
 .footer button {
     width: 120px;
     height: 40px;
-    font-family: Sora;
+    font-family: 'Sora', Arial, sans-serif;
     
     color: #000000;
     font-size: 16px;
@@ -489,7 +489,7 @@ body {
 } /* .footer */
 
 .longInput {
-    font-family: Sora;
+    font-family: 'Sora', Arial, sans-serif;
 }
 
 
