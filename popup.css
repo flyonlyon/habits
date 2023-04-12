@@ -1,0 +1,218 @@
+body {
+  font-family: verdana, sans-serif;
+  margin: 0;
+  padding: 8px;
+}
+
+#plants{
+  color: #BBADEE;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#weekday{
+  color: #8E94F2;
+}
+
+#progressBar-text{
+  color: #9FA0FF
+}
+
+.allTasks{
+  align-items: center;
+}
+
+button{
+  background-color: #DAB6EC;
+  border: 2px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#text{
+  display: flex;
+  align-self: flex-start;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#newAdd{
+  margin-bottom: 11px;
+}
+
+input{
+  margin-bottom: 4px;
+}
+
+.text{
+  text-align: center;
+}
+
+#water{
+  display: flex;
+  align-self: flex-end;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+#outerCircle{
+  width: 80px;
+  height: 80px;
+  padding: 30px;
+  background: conic-gradient(#8E94F2 3.6deg, white 0deg);
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#innerCircle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border: 2px solid;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: inset 6px 6px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#value{
+  font-size: 15px;
+  font-weight: bold;
+  color: #8E94F2;
+}
+
+.allTasks{
+  width: calc(50% - 20px);
+  padding: 15px;
+}
+
+.images{
+  padding-right: 10px;
+  padding-bottom: 10px;
+  align-self: flex-end;
+}
+
+h1 {
+  font-weight: 800;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#timer {
+  margin-top: 3px;
+  margin-bottom: 15px;
+  color: gray;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* li.completed label {
+  text-decoration: line-through;
+} */
+
+.completed-checkbox {
+  margin-right: 10px;
+}
+
+.waterTracking{
+  color: #8895B3;
+  text-align: center;
+}
+
+.delete {
+  margin-left: auto;
+  border: none;
+  background-color: #8895B3;
+  color: #fff;
+  font-size: x-small;
+  padding: 2px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: #c00;
+}
+
+button:hover {
+  background-color: #8895B3;
+}
+
+.updateWater{
+  display: flex;
+}
+
+#addTask {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#addTask input[type="text"] {
+  flex-grow: 1;
+  font-family: Sora;
+  margin-right: 10px;
+}
+
+#add-btn {
+  border: none;
+  background-color: #DAB6FC;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: Sora;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background-color: #9FA0FF;
+}
+
+input[type="checkbox"] {
+  accent-color: #9FA0FF;
+}
+
+#progressBar {
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progressBar-inner {
+  height: 100%;
+  background-color: #9FA0FF;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  transition: width 0.5s ease;
+}
+
+.progressBar-text {
+  text-align: center;
+}
