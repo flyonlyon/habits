@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    padding: 0;
+    padding-top: 60px;
     height: 2500px;
     
-    font-family: verdana;
+    font-family: Sora;
     
     background-color: #FAF5FF;
 } /* body */
@@ -23,15 +23,19 @@ body {
 /* Notif */
 #popup {
     display: none;
+    position: sticky;
+    top: 0;
+    color: white;
+    z-index: 3;
 } /* #popup */
 
 .box {
-    width: 300px;
-    height: 50px;
+    width: 470px;
+    height: 212px;
     position: fixed;
     
     top: 13px;
-    right: 60px;
+    right: 40px;
     
     border-radius: 10px;
     background-image: linear-gradient(to right, #9FA0FF, #BBADFF);
@@ -50,12 +54,12 @@ body {
     width: 35px;
     height: 35px;
     position: absolute;
+    font-family: Sora;
     
     top: 8px;
     right: 10px;
     color: #FFFFFF;
     font-size: 18px;
-    
     border: none;
     background-color: transparent;
     border-radius: 10px;
@@ -79,6 +83,7 @@ body {
 #navbar {
     padding: 10px;
     height: 60px;
+    overflow: hidden;
     
     background-color: #FFFFFF;
     
@@ -86,6 +91,10 @@ body {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 0px 10px #00000033;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 } /* #navbar */
 
 .logo {
@@ -131,9 +140,9 @@ body {
 } /* .container */
 
 .left {
-    width: 50%;
+    width: 70%;
     height: 100%;
-    
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,22 +150,27 @@ body {
 } /* left */
 
 .download-title {
-    margin: 0px;
-    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #DAB6FC;
+    opacity: 90%;
+    font-size: 72px;
 } /* .download h2 */
 
 .download-text {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 30px 0px;
     font-size: 18px;
 } /* .download p */
 
 .download-button {
-    height: 90px;
-    width: 100%;
+    height: 80px;
+    width: 300px;
+    align-self: left;
     
     color: #FFFFFF;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 900;
+    font-family: Sora;
     background-image: linear-gradient(to right, #9FA0FF, #BBADFF);
     box-shadow: 0px 0px 10px #00000033;
     
@@ -320,6 +334,7 @@ body {
     padding: 0px 15px;
     
     color: #FFFFFF;
+    font-family: Sora;
     font-size: 16px;
     background-image: linear-gradient(to right, #9FA0FF, #BBADFF);
     box-shadow: 0px 0px 10px #00000033;
@@ -362,6 +377,7 @@ body {
     
     border: none;
     font-size: 20px;
+    font-family: Sora;
 } /* .input-info input */
 
 .input-message {
@@ -393,7 +409,7 @@ body {
 
 .submit {
     margin-top: 20px;
-    
+    font-family: Sora;
     display: flex;
     flex-direction: row;
 } /* .submit */
@@ -403,6 +419,7 @@ body {
     height: 50px;
     margin-right: 20px;
     
+    font-family: Sora;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 600;
@@ -424,7 +441,6 @@ body {
 
 .envelope {
     margin: 0px auto;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -451,6 +467,7 @@ body {
 .footer button {
     width: 120px;
     height: 40px;
+    font-family: Sora;
     
     color: #000000;
     font-size: 16px;
@@ -470,3 +487,15 @@ body {
 .footer p {
     font-size: 16px;
 } /* .footer */
+
+.longInput {
+    font-family: Sora;
+}
+
+
+
+ol {
+    margin-right: 30px;
+}
+
+
