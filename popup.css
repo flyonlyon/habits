@@ -1,5 +1,5 @@
 body {
-  font-family: verdana, sans-serif;
+  font-family: 'Sora', Arial, sans-serif;
   margin: 0;
   padding: 8px;
 }
@@ -41,6 +41,7 @@ button{
   text-align: center;
   font-weight: bold;
   margin-bottom: 5px;
+    color: #8E94F2;
 }
 
 #newAdd{
@@ -48,11 +49,35 @@ button{
 }
 
 input{
-  margin-bottom: 4px;
+  height: 20px;
+  margin-right: 4px;
 }
 
 .text{
   text-align: center;
+}
+
+#addWaterGoal {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6px;
+}
+
+#addWaterGoal input {
+  width: 100px;
+}
+
+#updateWater {
+  display: flex;
+  flex-direction: row;
+}
+
+#updateWater input {
+  width: 100px;
+}
+
+#updateWater button {
+  width: 35px;
 }
 
 #water{
