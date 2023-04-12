@@ -5,10 +5,32 @@ const progressBar = document.getElementById('progress-bar');
 const progressBarInner = document.getElementById('progress-bar-inner');
 const progressBarText = document.getElementById('progress-bar-text');
 const flowerImage = document.getElementById('flower-img');
+const weekdayTitle = document.getElementById('weekday-title');
+const timer = document.getElementById('timer');
 
 let tasks = [];
 
-// chrome.browserAction.setIcon({path: "images/sad.png"});
+const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const d = new Date();
+weekdayTitle.textContent = weekday[d.getDay()];
+
+var date = new Date();
+var leftHour = 23 - date.getHours();
+var leftMinute = 59 - date.getMinutes();
+
+var leftTime = (leftHour * 3600) + (leftMinute * 60);
+updateTimer();
+setInterval(updateTimer, 1000);
+
+function updateTimer() {
+  var h = Math.floor(leftTime / 3600);
+  var m = Math.floor((leftTime - (h * 3600)) / 60);
+
+  timer.textContent = h + "h " + m + "m left";
+  leftTime--;
+}
+
 // Load tasks from storage
 chrome.storage.sync.get('tasks', (data) => {
   if (data.tasks) {
