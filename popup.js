@@ -94,15 +94,23 @@ function updateProgressBar() {
   const completedTasks = tasks.filter((task) => task.completed).length;
   const totalTasks = tasks.length;
   let progress = 0;
+    
   if (totalTasks == 0){
       progress = 0;
   }
   else{
     progress = completedTasks / totalTasks;
   }
+    
   const progressBarInner = document.getElementById('progressBar-inner');
   progressBarInner.style.width = `${progress * 100}%`;
-  progressBarInner.innerHTML = `${Math.round(progress * 100)}%`;
+    
+  if (progress == 0) {
+      progressBarInner.innerHTML = "&nbsp" + `${Math.round(progress * 100)}%`;
+  } else {
+      progressBarInner.innerHTML = `${Math.round(progress * 100)}%`;
+  }
+  
   const progressBarText = document.getElementById('progressBar-text');
   progressBarText.innerHTML = `${completedTasks} / ${totalTasks} tasks completed`;
 
@@ -141,24 +149,42 @@ let circleProgress = document.getElementById('outerCircle');
 
 const progressVal = document.getElementById('value');
 const goalVal = document.getElementById('waterVal');
+const addBut = document.getElementById('addBut');
 const watBut = document.getElementById('addBut');
 var addVal = document.getElementById('currentAddition');
 var addGoal = document.getElementById('newAdd');
+var subGoal = document.getElementById('newSub');
 var goal = 0;
 var begin = 0;
+
 watBut.addEventListener('click', () => {
   event.preventDefault();
-  console.log("boom");
   goal = parseInt(goalVal.value);
-  progressVal.innerHTML = begin + "/" + goal;
+  if (goal != "") {
+    progressVal.innerHTML = begin + "/" + goal;
+    circleProgress.style.background = `conic-gradient(#8E94F2 ${(begin / goal) * 360}deg, white 0deg)`;
+  }
 });
 
 addGoal.addEventListener('click', () => {
   event.preventDefault();
   let addVal = document.getElementById('currentAddition');
-  begin += parseInt(addVal.value);
-  circleProgress.style.background = `conic-gradient(#8E94F2 ${(begin) * 3.6}deg, white 0deg)`;
-  progressVal.innerHTML = begin + "/" + goal;
+  if (addVal.value != "") {
+    begin += parseInt(addVal.value);
+    circleProgress.style.background = `conic-gradient(#8E94F2 ${(begin / goal) * 360}deg, white 0deg)`;
+    progressVal.innerHTML = begin + "/" + goal;   
+  }
+});
+
+subGoal.addEventListener('click', () => {
+  event.preventDefault();
+  let subVal = document.getElementById('currentAddition');
+  if (addVal.value != "") {
+    begin -= parseInt(addVal.value);
+    if (begin < 0) begin = 0;
+    circleProgress.style.background = `conic-gradient(#8E94F2 ${(begin / goal) * 360}deg, white 0deg)`;
+    progressVal.innerHTML = begin + "/" + goal;
+  }
 });
 
 // chrome.storage.sync.set({

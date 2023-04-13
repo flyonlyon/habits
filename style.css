@@ -185,9 +185,9 @@ body {
 
 .right {
     width: 75%;
-    margin-left: -10%;
+    margin-left: -15%;
     
-    overflow: hidden;
+    overflow: visible;
     z-index: -1;
 } /* .right */
 
@@ -195,6 +195,7 @@ body {
     width: 900px;
     height: 600px;
     margin-top: 80px;
+    margin-left: -5%;
     transform: scaleX(-1);
     
     object-fit: cover;

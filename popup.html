@@ -16,35 +16,33 @@
     <h1 id="weekday"></h1>
     <p id="timer"></p>
     <form id="addTask">
-      <input type="text" id="task" placeholder="Add a task..." />
-      <button type="submit" id="button">Add</button>
+      <input type="text" id="task" placeholder="Name of task" />
+      <button type="submit" id="button"> Add </button>
     </form>
     <ul id="taskList"></ul>
       <div id="progressBar">
-        <div id="progressBar-inner"></div>
+        <div id="progressBar-inner">
+        </div>
       </div>
       <p id="progressBar-text"></p>
   </div>
   <div class="images">
-    <div id = "plants"> Grow Your Plant With Your Tasks! </div>
+    <div id="plants"> Grow Your Plant By Finishing Tasks! </div>
     <img id="flower-img" src="images/flowers-1.png" alt="Image">
   </div>
   <div class = "waterTracking">
-    <div id = "text">
-      Daily Water Goal:
-    </div>
+    <div id = "text"> Daily Water Goal: </div>
     <form id="addWaterGoal">
       <input type="text" id="waterVal" placeholder="Total cups" />
-      <button type="submit" id="addBut">Add</button>
+      <button type="submit" id="addBut"> Set </button>
     </form>
-    <div id = "text">
-      Update Your Progress:
-    </div>
+    <div id = "text"> Update Your Progress: </div>
     <form id="updateWater">
-      <input type="text" id="currentAddition" placeholder="Add a value..." size = "20"/>
-      <button type="submit" id="newAdd">+</button>
+      <input type="text" id="currentAddition" placeholder="Amount" size = "20"/>
+      <button type="submit" id="newAdd"> + </button>
+      <button type="submit" id="newSub"> - </button>
     </form>
-    <div id = "water">
+    <div id="water">
       <div id = "outerCircle">
         <div id = "innerCircle">
           <div id = "value"> 0/0 </div>
