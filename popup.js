@@ -171,7 +171,14 @@ addGoal.addEventListener('click', () => {
   let addVal = document.getElementById('currentAddition');
   if (addVal.value != "") {
     begin += parseInt(addVal.value);
-    circleProgress.style.background = `conic-gradient(#8E94F2 ${(begin / goal) * 360}deg, white 0deg)`;
+    if(begin >= goal){
+      circleProgress.style.background = `conic-gradient(#DAB6FC ${(begin / goal) * 360}deg, white 0deg)`;
+      circleProgress.style.border = "2px black solid";
+    }
+    else{
+      circleProgress.style.background = `conic-gradient(#8E94F2 ${(begin / goal) * 360}deg, white 0deg)`;
+      circleProgress.style.border = "none";
+    }
     progressVal.innerHTML = begin + "/" + goal;   
   }
 });
@@ -182,7 +189,14 @@ subGoal.addEventListener('click', () => {
   if (addVal.value != "") {
     begin -= parseInt(addVal.value);
     if (begin < 0) begin = 0;
-    circleProgress.style.background = `conic-gradient(#8E94F2 ${(begin / goal) * 360}deg, white 0deg)`;
+    if(begin >= goal){
+      circleProgress.style.background = `conic-gradient(#DAB6FC ${(begin / goal) * 360}deg, white 0deg)`;
+      circleProgress.style.border = "2px black solid";
+    }
+    else{
+      circleProgress.style.background = `conic-gradient(#8E94F2 ${(begin / goal) * 360}deg, white 0deg)`;
+      circleProgress.style.border = "none";
+    }
     progressVal.innerHTML = begin + "/" + goal;
   }
 });
