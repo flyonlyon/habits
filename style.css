@@ -499,4 +499,22 @@ ol {
     margin-right: 30px;
 }
 
+#tutImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+#tutImg img{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px #ccc;
+    margin: 20px;
+}
+
+#how{	
+    padding-left: 100px;	
+    background: #FFFFFF;	
+    padding-top: 50px;	
+    padding-bottom: 50px;	
+}
