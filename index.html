@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        
+        <title> Habits </title>
+        <link rel="icon" href="images/happyface.png">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!-- Extention -->
+        <div id="popup">
+            <div class="box">
+                <div class="row">
+                    <p> Your download should start automatically! Unzip the file and follow these steps:</p>
+                    <ol>
+                        <li>Go to chrome://extensions/</li>
+                        <li>Turn on Developer mode at the top right corner</li>
+                        <li>Click "Load unpacked" at the top left corner</li>
+                        <li>Select the extension folder</li>
+                        <li>To access your extension, press on the puzzle piece icon in your browser</li>
+                        <li>Select Habits and enjoy!</li>
+                    </ol>
+                    <button onclick="hidePopup()"> ✘ </button>
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+        
+        <!-- Navbar -->
+        <div id="navbar">
+            <div class="logo">
+                <img src="images/happyface.png">
+                <p> Habits </p>
+            </div>
+            <div class="links">
+                <a href="#testimonials"> Testimonials </a>
+                <a href="#about"> About </a>
+                <a href="#values"> Values </a>
+                <a href="#contact"> Contact </a>
+            </div>
+        </div>
+        
+        <!-- Home -->
+        <div id="home">
+            <div class="left">
+                <div class="column">
+                    <h2 class="download-title"> Install Habits today. </h2>
+                    <p class="download-text"> Start your path towards wellness </p>
+                    <button class="download-button" onclick="showPopup()"> Add To Chrome </button>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/Student.png">
+            </div>
+        </div>
+        
+        <div class="plaque">
+            
+            <!-- Testimonials -->
+            <h3 id="testimonials" class="title"> Testimonials </h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="border">
+                        <img src="images/Test-Serena.png">
+                    </div>
+                    <div class="testimonial-text">
+                        <h3 class="name"> Serena F. </h3>
+                        <p class="info"> University of Michigan, Class of 2025 </p>
+                        <p class="quote"> "Before I discovered Habits, I would constantly get so swept up in work that I would forget to take care of myself. Now, I'm finally finding that balance I was missing!" </p>
+                    </div>
+                </div>
+
+                <div class="testimonial bumped">
+                    <div class="border">
+                        <img src="images/Test-Aryan.png">
+                    </div>
+                    <div class="testimonial-text">
+                        <h3 class="name"> Aryan K. </h3>
+                        <p class="info"> University of Michigan, Class of 2024 </p>
+                        <p class="quote"> "Habits is really easy to use and I feel more in control of my routine by being able to manage and create tasks, set goals for myself, and get rewards for following through." </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About -->
+            <h3 id="about" class="title"> What We Do </h3>
+            <div class="about">
+                <div class="about-text">
+                    <p> Welcome to Habits! We're a team working to help students with habit tracking. Through our browser extension, students can add tasks that they want to complete throughout the day, ranging from mental wellness, skincare, reading for 10 minutes,  drinking a glass of water, and much more. A to-do list allows you to easily keep track of what you have (and haven't) done, taking the stress of remembering off you. </p>
+                    <p> Our extension also comes with suggestions for different tasks such as a 10 minute walk or stretches, rewarding you with a variety of awards to celebrate your achievements. Screen break alerts notify you when you've been looking at the screen for an extended period of time, allowing you to manage healthy breaks without having to mentally distract from your assignments. </p>
+                </div>
+                <img class="flower" src="images/flowers-5.png">
+            </div>
+        </div>
+        
+        <div class="workspace">
+            
+            <!-- Values -->
+            <h3 id="values" class="title"> Our Values </h3>
+            <div class="values">
+                <img class="pic" src="images/Values.png">
+                <div class="column">
+                    <p> At our core, we believe wellbeing, simplicity, and ease-of-use are keys to keeping you on track, which is why we design around these set of core values. We believe an extension—as opposed to a website—facilitates consistent and daily use in a way that doest distract you from the work you're already occupied with. The best way to work is healthily and habitually, which is why we created Habits. </p>
+                    <p> As students ourselves, we know the struggles that come with balaning work, school, social, and professional lives. We want to take the practical knowledge we've gained through tracking our own habits and shape it into something others can use to keep themselves on track and find success in their own lives. </p>
+                    <a href="https://www.intelligentchange.com/blogs/read/why-and-how-a-habit-tracker-works" target="_blank">
+                        <button class="link"> Learn More About Habit Tracking </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id = "how">
+            <h3 id="tutorial" class="title"> Tutorial </h3>
+            <div id = "howText">
+                <p> To make your experience with Habits smoother, here is an introduction to the extension: </p>
+            </div>
+            <div id = "tutImg">
+                <img alt = "task" src = "images/task.png">
+                <img alt = "task" src = "images/taskProgress.png">
+                <img alt = "task" src = "images/water.png">
+                <img alt = "task" src = "images/update.png">
+                <img alt = "task" src = "images/waterGoal.png">
+            </div>
+        </div>
+
+        <div class = "workspace">
+            <!-- Contact -->
+            <h3 id="contact" class="title"> Get In Touch </h3>
+            <div class="contact">
+                <form id="form" class="column">
+                    <div>
+                        <div class="row">
+                            <div class="input-info">
+                                <p> Name </p>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            <div class="input-info">
+                                <p> Email </p>
+                                <input type="text" id="email" name="email">
+                            </div>
+                        </div>
+
+                        <div class="input-message">
+                            <p> Message </p>
+                            <textarea class="longInput" cols="30" rows="10" id="message" name="message"></textarea>
+                        </div>
+
+                        <div class="submit">
+                            <button class="submit-button" type="button" onclick="submitForm()"> Submit </button> 
+                            <p id="submit-text"> ✔ Thank you for contacting us! We'll get back to you soon :) </p>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="envelope">
+                    <img src="images/envelope.png">
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <a href="#home"> <button> Back to top </button> </a>
+            <p> Made with 💜 by Flynn, Haripriya, Harshita, Izzy, and Lucas </p>
+        </div>
+        
+    </body>
+</html>
