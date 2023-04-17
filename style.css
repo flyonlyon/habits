@@ -30,8 +30,8 @@ body {
 } /* #popup */
 
 .box {
-    width: 470px;
-    height: 212px;
+    width: 500px;
+    height: 250px;
     position: fixed;
     
     top: 13px;
